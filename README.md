@@ -25,6 +25,18 @@ STEP:7 compare the output with truth table.
 ![image](https://github.com/RESMIRNAIR/HALF_ADDER/assets/154305926/020e1531-1c11-42e5-9f27-f09ba459984d)
 # Carry = A AND B
 ![image](https://github.com/RESMIRNAIR/HALF_ADDER/assets/154305926/988ae131-0822-4d23-941b-eaafad349a72)
+# VERILOG CODE:
+module Half_adder(a,b,sum,carry);
+
+input a,b;
+
+output sum,carry;
+
+xor g1(sum,a,b);
+
+and g2(carry,a,b);
+
+endmodule
 # output
 ![319114116-722b95ad-91d9-427b-a294-37a07085d85e](https://github.com/Gmaheshkumar07/HALF_ADDER/assets/166600053/df98188c-6702-4939-b995-0430532a63d2)
 # RESULT:
